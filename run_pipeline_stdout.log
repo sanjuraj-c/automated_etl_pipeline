@@ -1,0 +1,208 @@
+2025-09-19 16:26:14,157 [INFO] Running extractor for sample_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sample_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sample_csv__20250919T105615Z.parquet
+2025-09-19 16:26:16,184 [INFO] ✅ Extractor succeeded for sample_csv
+2025-09-19 16:26:16,184 [INFO] Running transformer for sample_csv
+2025-09-19 16:26:19,386 [INFO] Loading staged file: data\staging\sample_csv__20250919T105615Z.parquet
+2025-09-19 16:26:19,515 [INFO] Cleaning data...
+2025-09-19 16:26:19,829 [INFO] Feature engineering...
+2025-09-19 16:26:19,842 [INFO] Generating data quality report...
+2025-09-19 16:26:24,507 [INFO] Generating HTML report: data\processed\sample_csv__report__20250919T105624Z.html
+2025-09-19 16:26:33,069 [INFO] ✅ Transformer succeeded for sample_csv
+2025-09-19 16:26:33,069 [INFO] Running extractor for api_data
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_data with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_data__20250919T105635Z.parquet
+2025-09-19 16:26:35,542 [INFO] ✅ Extractor succeeded for api_data
+2025-09-19 16:26:35,542 [INFO] Running transformer for api_data
+2025-09-19 16:26:39,231 [INFO] Loading staged file: data\staging\api_data__20250919T105635Z.parquet
+2025-09-19 16:26:39,291 [INFO] Cleaning data...
+2025-09-19 16:26:39,315 [INFO] Feature engineering...
+2025-09-19 16:26:39,319 [INFO] Generating data quality report...
+2025-09-19 16:26:41,181 [INFO] Generating HTML report: data\processed\api_data__report__20250919T105641Z.html
+2025-09-19 16:26:46,945 [INFO] ✅ Transformer succeeded for api_data
+2025-09-19 16:26:50,812 [INFO] Email notification sent successfully
+2025-09-19 16:26:51,118 [INFO] Pipeline completed.
+2025-09-19 16:50:44,531 [INFO] Running extractor for sample_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sample_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sample_csv__20250919T112046Z.parquet
+2025-09-19 16:50:46,423 [INFO] ✅ Extractor succeeded for sample_csv
+2025-09-19 16:50:46,423 [INFO] Running transformer for sample_csv
+2025-09-19 16:50:49,607 [INFO] Loading staged file: data\staging\sample_csv__20250919T112046Z.parquet
+2025-09-19 16:50:49,721 [INFO] Cleaning data...
+2025-09-19 16:50:50,019 [INFO] Feature engineering...
+2025-09-19 16:50:50,031 [INFO] Generating data quality report...
+2025-09-19 16:50:54,709 [INFO] Generating HTML report: data\processed\sample_csv__report__20250919T112054Z.html
+2025-09-19 16:51:03,070 [INFO] ✅ Transformer succeeded for sample_csv
+2025-09-19 16:51:03,070 [INFO] Running extractor for api_data
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_data with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_data__20250919T112104Z.parquet
+2025-09-19 16:51:05,033 [INFO] ✅ Extractor succeeded for api_data
+2025-09-19 16:51:05,033 [INFO] Running transformer for api_data
+2025-09-19 16:51:08,258 [INFO] Loading staged file: data\staging\api_data__20250919T112104Z.parquet
+2025-09-19 16:51:08,309 [INFO] Cleaning data...
+2025-09-19 16:51:08,332 [INFO] Feature engineering...
+2025-09-19 16:51:08,335 [INFO] Generating data quality report...
+2025-09-19 16:51:10,185 [INFO] Generating HTML report: data\processed\api_data__report__20250919T112110Z.html
+2025-09-19 16:51:15,073 [INFO] ✅ Transformer succeeded for api_data
+2025-09-19 16:51:18,546 [INFO] Email notification sent successfully
+2025-09-19 16:51:18,807 [INFO] Pipeline completed.
+2025-09-19 16:58:39,992 [INFO] Running extractor for sample_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sample_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sample_csv__20250919T112842Z.parquet
+2025-09-19 16:58:43,304 [INFO] ✅ Extractor succeeded for sample_csv
+2025-09-19 16:58:43,304 [INFO] Running transformer for sample_csv
+2025-09-19 16:58:46,945 [INFO] Loading staged file: data\staging\sample_csv__20250919T112842Z.parquet
+2025-09-19 16:58:47,064 [INFO] Cleaning data...
+2025-09-19 16:58:47,335 [INFO] Feature engineering...
+2025-09-19 16:58:47,351 [INFO] Generating data quality report...
+2025-09-19 16:58:51,312 [INFO] Generating HTML report: data\processed\sample_csv__report__20250919T112851Z.html
+2025-09-19 16:58:58,472 [INFO] ✅ Transformer succeeded for sample_csv
+2025-09-19 16:58:58,472 [INFO] Running extractor for api_data
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_data with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_data__20250919T112900Z.parquet
+2025-09-19 16:59:00,348 [INFO] ✅ Extractor succeeded for api_data
+2025-09-19 16:59:00,348 [INFO] Running transformer for api_data
+2025-09-19 16:59:03,122 [INFO] Loading staged file: data\staging\api_data__20250919T112900Z.parquet
+2025-09-19 16:59:03,172 [INFO] Cleaning data...
+2025-09-19 16:59:03,192 [INFO] Feature engineering...
+2025-09-19 16:59:03,195 [INFO] Generating data quality report...
+2025-09-19 16:59:05,016 [INFO] Generating HTML report: data\processed\api_data__report__20250919T112905Z.html
+2025-09-19 16:59:08,429 [INFO] ✅ Transformer succeeded for api_data
+2025-09-19 16:59:12,138 [INFO] Email notification sent successfully
+2025-09-19 16:59:12,383 [INFO] Pipeline completed.
+2025-09-19 17:16:15,918 [INFO] Running extractor for sample_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sample_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sample_csv__20250919T114626Z.parquet
+2025-09-19 17:16:27,430 [INFO] ✅ Extractor succeeded for sample_csv
+2025-09-19 17:16:27,431 [INFO] Running transformer for sample_csv
+2025-09-19 17:16:56,670 [INFO] Loading staged file: data\staging\sample_csv__20250919T114626Z.parquet
+2025-09-19 17:16:57,400 [INFO] Cleaning data...
+2025-09-19 17:16:57,642 [INFO] Feature engineering...
+2025-09-19 17:16:57,652 [INFO] Generating data quality report...
+2025-09-19 17:17:01,305 [INFO] Generating HTML report: data\processed\sample_csv__report__20250919T114701Z.html
+2025-09-19 17:17:08,288 [INFO] ✅ Transformer succeeded for sample_csv
+2025-09-19 17:17:08,288 [INFO] Running extractor for api_data
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_data with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_data__20250919T114710Z.parquet
+2025-09-19 17:17:10,143 [INFO] ✅ Extractor succeeded for api_data
+2025-09-19 17:17:10,143 [INFO] Running transformer for api_data
+2025-09-19 17:17:12,751 [INFO] Loading staged file: data\staging\api_data__20250919T114710Z.parquet
+2025-09-19 17:17:12,809 [INFO] Cleaning data...
+2025-09-19 17:17:12,829 [INFO] Feature engineering...
+2025-09-19 17:17:12,831 [INFO] Generating data quality report...
+2025-09-19 17:17:14,491 [INFO] Generating HTML report: data\processed\api_data__report__20250919T114714Z.html
+2025-09-19 17:17:17,671 [INFO] ✅ Transformer succeeded for api_data
+2025-09-19 17:17:21,039 [INFO] Email notification sent successfully
+2025-09-19 17:17:21,282 [INFO] Pipeline completed.
+2025-09-19 17:23:56,457 [INFO] Running extractor for sample_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sample_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sample_csv__20250919T115357Z.parquet
+2025-09-19 17:23:57,755 [INFO] ✅ Extractor succeeded for sample_csv
+2025-09-19 17:23:57,755 [INFO] Running transformer for sample_csv
+2025-09-19 17:24:00,559 [INFO] Loading staged file: data\staging\sample_csv__20250919T115357Z.parquet
+2025-09-19 17:24:00,698 [INFO] Cleaning data...
+2025-09-19 17:24:01,082 [INFO] Feature engineering...
+2025-09-19 17:24:01,097 [INFO] Generating data quality report...
+2025-09-19 17:24:04,999 [INFO] Generating HTML report: data\processed\sample_csv__report__20250919T115404Z.html
+2025-09-19 17:24:12,206 [INFO] ✅ Transformer succeeded for sample_csv
+2025-09-19 17:24:12,206 [INFO] Running extractor for api_data
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_data with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:87: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_data__20250919T115424Z.parquet
+2025-09-19 17:24:24,245 [INFO] ✅ Extractor succeeded for api_data
+2025-09-19 17:24:24,245 [INFO] Running transformer for api_data
+2025-09-19 17:24:26,921 [INFO] Loading staged file: data\staging\api_data__20250919T115424Z.parquet
+2025-09-19 17:24:26,983 [INFO] Cleaning data...
+2025-09-19 17:24:27,005 [INFO] Feature engineering...
+2025-09-19 17:24:27,008 [INFO] Generating data quality report...
+2025-09-19 17:24:28,693 [INFO] Generating HTML report: data\processed\api_data__report__20250919T115428Z.html
+2025-09-19 17:24:32,917 [INFO] ✅ Transformer succeeded for api_data
+2025-09-19 17:24:35,967 [INFO] Email notification sent successfully
+2025-09-19 17:24:36,210 [INFO] Pipeline completed.
+2025-09-19 23:21:23,309 [INFO] Running extractor for samplepassengers_csv
+INFO:__main__:Loading CSV: samples/AirPassengers.csv
+INFO:__main__:Validation passed for samplepassengers_csv with shape (144, 2)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\samplepassengers_csv__20250919T175124Z.parquet
+2025-09-19 23:21:24,876 [INFO] ✅ Extractor succeeded for samplepassengers_csv
+2025-09-19 23:21:24,876 [INFO] Running transformer for samplepassengers_csv
+2025-09-19 23:21:29,124 [INFO] Loading staged file: data\staging\samplepassengers_csv__20250919T175124Z.parquet
+2025-09-19 23:21:29,179 [INFO] Cleaning data...
+2025-09-19 23:21:29,184 [INFO] Feature engineering...
+2025-09-19 23:21:29,187 [INFO] Generating data quality report...
+2025-09-19 23:21:31,237 [INFO] Generating HTML dashboard report: data\processed\samplepassengers_csv__report__20250919T175131Z.html
+2025-09-19 23:21:34,279 [INFO] ✅ Transformer succeeded for samplepassengers_csv
+2025-09-19 23:21:34,279 [INFO] Running extractor for sampleretail_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sampleretail_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sampleretail_csv__20250919T175135Z.parquet
+2025-09-19 23:21:36,179 [INFO] ✅ Extractor succeeded for sampleretail_csv
+2025-09-19 23:21:36,179 [INFO] Running transformer for sampleretail_csv
+2025-09-19 23:21:40,382 [INFO] Loading staged file: data\staging\sampleretail_csv__20250919T175135Z.parquet
+2025-09-19 23:21:40,547 [INFO] Cleaning data...
+2025-09-19 23:21:41,025 [INFO] Feature engineering...
+2025-09-19 23:21:41,044 [INFO] Generating data quality report...
+2025-09-19 23:21:46,609 [INFO] Generating HTML dashboard report: data\processed\sampleretail_csv__report__20250919T175146Z.html
+2025-09-19 23:22:03,559 [INFO] ✅ Transformer succeeded for sampleretail_csv
+2025-09-19 23:22:03,559 [INFO] Running extractor for samplepowercons_csv
+INFO:__main__:Loading CSV: samples/powerconsumption.csv
+INFO:__main__:Validation passed for samplepowercons_csv with shape (1228, 4)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\samplepowercons_csv__20250919T175204Z.parquet
+2025-09-19 23:22:05,086 [INFO] ✅ Extractor succeeded for samplepowercons_csv
+2025-09-19 23:22:05,086 [INFO] Running transformer for samplepowercons_csv
+2025-09-19 23:22:09,455 [INFO] Loading staged file: data\staging\samplepowercons_csv__20250919T175204Z.parquet
+2025-09-19 23:22:09,526 [INFO] Cleaning data...
+2025-09-19 23:22:09,534 [INFO] Feature engineering...
+2025-09-19 23:22:09,538 [INFO] Generating data quality report...
+2025-09-19 23:22:11,709 [INFO] Generating HTML dashboard report: data\processed\samplepowercons_csv__report__20250919T175211Z.html
+2025-09-19 23:22:15,583 [INFO] ✅ Transformer succeeded for samplepowercons_csv
+2025-09-19 23:22:15,583 [INFO] Running extractor for api_cryptodata
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_cryptodata with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_cryptodata__20250919T175218Z.parquet
+2025-09-19 23:22:18,677 [INFO] ✅ Extractor succeeded for api_cryptodata
+2025-09-19 23:22:18,677 [INFO] Running transformer for api_cryptodata
+2025-09-19 23:22:22,968 [INFO] Loading staged file: data\staging\api_cryptodata__20250919T175218Z.parquet
+2025-09-19 23:22:23,068 [INFO] Cleaning data...
+2025-09-19 23:22:23,113 [INFO] Feature engineering...
+2025-09-19 23:22:23,118 [INFO] Generating data quality report...
+2025-09-19 23:22:25,245 [INFO] Generating HTML dashboard report: data\processed\api_cryptodata__report__20250919T175225Z.html
+2025-09-19 23:22:38,298 [INFO] ✅ Transformer succeeded for api_cryptodata
+2025-09-19 23:22:42,613 [INFO] Email notification sent successfully
+2025-09-19 23:22:42,919 [INFO] Pipeline completed.
