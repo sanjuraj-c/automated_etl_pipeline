@@ -1,0 +1,34 @@
+paths:
+  staging_dir: "data/staging"
+  processed_dir: "data/processed"
+  reports_dir: "data/reports"
+
+sources:
+  samplepassengers_csv:
+    type: csv
+    path: "samples/AirPassengers.csv"
+
+  sampleretail_csv:
+    type: csv
+    path: "samples/Retail_Transaction_Dataset.csv"
+
+  samplepowercons_csv:
+    type: csv
+    path: "samples/powerconsumption.csv"
+
+  api_cryptodata:
+    type: api
+    url: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
+
+  imdb_top:
+    type: scraper
+    url: "https://www.imdb.com/chart/top"
+    # optional: limit number of rows to store (set to 0 to keep all)
+    limit: 250
+
+email:
+  user: "sr8524295@gmail.com"
+  password: "iwtl qqln kwsp opyk"   # Gmail App Password
+  to: "sanjuraj31597@gmail.com"
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
