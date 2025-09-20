@@ -1,0 +1,72 @@
+2025-09-20 10:40:26,775 [INFO] Running extractor for samplepassengers_csv
+INFO:__main__:Loading CSV: samples/AirPassengers.csv
+INFO:__main__:Validation passed for samplepassengers_csv with shape (144, 2)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:201: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\samplepassengers_csv__20250920T051027Z.parquet
+2025-09-20 10:40:27,721 [INFO] ✅ Extractor succeeded for samplepassengers_csv
+2025-09-20 10:40:27,721 [INFO] Running transformer for samplepassengers_csv
+2025-09-20 10:40:30,348 [INFO] Loading staged file: data\staging\samplepassengers_csv__20250920T051027Z.parquet
+2025-09-20 10:40:30,387 [INFO] Cleaning data...
+2025-09-20 10:40:30,390 [INFO] Feature engineering...
+2025-09-20 10:40:30,392 [INFO] Generating data quality report...
+2025-09-20 10:40:32,308 [INFO] Generating HTML dashboard report: data\processed\reports\samplepassengers_csv__report__20250920T051032Z.html
+2025-09-20 10:40:33,778 [INFO] ✅ Transformer succeeded for samplepassengers_csv
+2025-09-20 10:40:33,778 [INFO] Running extractor for sampleretail_csv
+INFO:__main__:Loading CSV: samples/Retail_Transaction_Dataset.csv
+INFO:__main__:Validation passed for sampleretail_csv with shape (100000, 10)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:201: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\sampleretail_csv__20250920T051034Z.parquet
+2025-09-20 10:40:35,115 [INFO] ✅ Extractor succeeded for sampleretail_csv
+2025-09-20 10:40:35,115 [INFO] Running transformer for sampleretail_csv
+2025-09-20 10:40:37,639 [INFO] Loading staged file: data\staging\sampleretail_csv__20250920T051034Z.parquet
+2025-09-20 10:40:37,743 [INFO] Cleaning data...
+2025-09-20 10:40:38,000 [INFO] Feature engineering...
+2025-09-20 10:40:38,013 [INFO] Generating data quality report...
+2025-09-20 10:40:41,424 [INFO] Generating HTML dashboard report: data\processed\reports\sampleretail_csv__report__20250920T051041Z.html
+2025-09-20 10:40:49,832 [INFO] ✅ Transformer succeeded for sampleretail_csv
+2025-09-20 10:40:49,832 [INFO] Running extractor for samplepowercons_csv
+INFO:__main__:Loading CSV: samples/powerconsumption.csv
+INFO:__main__:Validation passed for samplepowercons_csv with shape (1228, 4)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:201: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\samplepowercons_csv__20250920T051050Z.parquet
+2025-09-20 10:40:50,907 [INFO] ✅ Extractor succeeded for samplepowercons_csv
+2025-09-20 10:40:50,907 [INFO] Running transformer for samplepowercons_csv
+2025-09-20 10:40:53,806 [INFO] Loading staged file: data\staging\samplepowercons_csv__20250920T051050Z.parquet
+2025-09-20 10:40:53,856 [INFO] Cleaning data...
+2025-09-20 10:40:53,861 [INFO] Feature engineering...
+2025-09-20 10:40:53,864 [INFO] Generating data quality report...
+2025-09-20 10:40:55,542 [INFO] Generating HTML dashboard report: data\processed\reports\samplepowercons_csv__report__20250920T051055Z.html
+2025-09-20 10:40:57,391 [INFO] ✅ Transformer succeeded for samplepowercons_csv
+2025-09-20 10:40:57,391 [INFO] Running extractor for api_cryptodata
+INFO:__main__:Loading API: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+INFO:__main__:Validation passed for api_cryptodata with shape (100, 26)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:201: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\api_cryptodata__20250920T051059Z.parquet
+2025-09-20 10:40:59,293 [INFO] ✅ Extractor succeeded for api_cryptodata
+2025-09-20 10:40:59,293 [INFO] Running transformer for api_cryptodata
+2025-09-20 10:41:02,009 [INFO] Loading staged file: data\staging\api_cryptodata__20250920T051059Z.parquet
+2025-09-20 10:41:02,061 [INFO] Cleaning data...
+2025-09-20 10:41:02,080 [INFO] Feature engineering...
+2025-09-20 10:41:02,083 [INFO] Generating data quality report...
+2025-09-20 10:41:03,841 [INFO] Generating HTML dashboard report: data\processed\reports\api_cryptodata__report__20250920T051103Z.html
+2025-09-20 10:41:10,292 [INFO] ✅ Transformer succeeded for api_cryptodata
+2025-09-20 10:41:10,292 [INFO] Running extractor for imdb_top
+INFO:__main__:Scraping URL: https://www.imdb.com/chart/top (limit=250)
+INFO:__main__:Validation passed for imdb_top with shape (25, 5)
+C:\Users\User\OneDrive\Desktop\automated_etl_pipeline\extractor.py:201: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+INFO:__main__:Saved to staging: data/staging\imdb_top__20250920T051115Z.parquet
+2025-09-20 10:41:15,971 [INFO] ✅ Extractor succeeded for imdb_top
+2025-09-20 10:41:15,971 [INFO] Running transformer for imdb_top
+2025-09-20 10:41:18,535 [INFO] Loading staged file: data\staging\imdb_top__20250920T051115Z.parquet
+2025-09-20 10:41:18,583 [INFO] Cleaning data...
+2025-09-20 10:41:18,588 [INFO] Feature engineering...
+2025-09-20 10:41:18,590 [INFO] Generating data quality report...
+2025-09-20 10:41:20,198 [INFO] Generating HTML dashboard report: data\processed\reports\imdb_top__report__20250920T051120Z.html
+2025-09-20 10:41:22,149 [INFO] ✅ Transformer succeeded for imdb_top
+2025-09-20 10:41:41,154 [INFO] Email notification sent successfully
+2025-09-20 10:41:41,462 [INFO] Pipeline completed.
