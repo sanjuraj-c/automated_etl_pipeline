@@ -1,0 +1,16 @@
+
+    <html>
+    <head>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #2c3e50; }
+            h2 { color: #34495e; margin-top: 30px; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f4f4f4; }
+            .grid { display: flex; flex-wrap: wrap; gap: 20px; }
+            .grid img { border: 1px solid #ccc; padding: 5px; background: #fafafa; }
+        </style>
+    </head>
+    <body>
+    <h1>Pipeline Dashboard: imdb_top</h1><h2>Summary Insights</h2><p><b>Total Rows:</b> 25<br><b>Total Columns:</b> 5<br></p><h2>Missing Values</h2><table><tr><th>Column</th><th>Missing</th></tr><tr><td>rank</td><td>0</td></tr><tr><td>title</td><td>0</td></tr><tr><td>year</td><td>0</td></tr><tr><td>rating</td><td>0</td></tr><tr><td>link</td><td>0</td></tr></table><h2>ML Analysis</h2><h3>Anomaly Detection</h3><table><tr><th>Type</th><th>Count</th></tr><tr><td>1</td><td>23</td></tr><tr><td>-1</td><td>2</td></tr></table><h3>Cluster Distribution</h3><table><tr><th>Cluster</th><th>Count</th></tr><tr><td>1</td><td>13</td></tr><tr><td>0</td><td>8</td></tr><tr><td>2</td><td>4</td></tr></table><img src='imdb_top__cluster_pie_20250920T051120Z.png' width='400'><h3>Summary Statistics</h3><table><tr><th>Column</th><th>Mean</th><th>Std</th><th>Min</th><th>Max</th></tr><tr><td>rank</td><td>8.881784197001253e-18</td><td>1.0206207261596576</td><td>-1.6641005886756874</td><td>1.6641005886756874</td></tr><tr><td>year</td><td>3.597122599785507e-15</td><td>1.0206207261596574</td><td>-2.3874286731002807</td><td>1.4487043555107622</td></tr><tr><td>rating</td><td>-3.9701575360595596e-15</td><td>1.0206207261596574</td><td>-1.1059630927007091</td><td>2.478176559570095</td></tr></table><h2>Data Distributions</h2><div class='grid'><div><h4>rank Distribution</h4><img src='imdb_top__rank_dist_20250920T051120Z.png' width='350'></div><div><h4>rank Boxplot</h4><img src='imdb_top__rank_box_20250920T051120Z.png' width='350'></div><div><h4>year Distribution</h4><img src='imdb_top__year_dist_20250920T051120Z.png' width='350'></div><div><h4>year Boxplot</h4><img src='imdb_top__year_box_20250920T051120Z.png' width='350'></div><div><h4>rating Distribution</h4><img src='imdb_top__rating_dist_20250920T051120Z.png' width='350'></div><div><h4>rating Boxplot</h4><img src='imdb_top__rating_box_20250920T051120Z.png' width='350'></div><div><h4>anomaly Distribution</h4><img src='imdb_top__anomaly_dist_20250920T051120Z.png' width='350'></div><div><h4>anomaly Boxplot</h4><img src='imdb_top__anomaly_box_20250920T051120Z.png' width='350'></div><div><h4>cluster Distribution</h4><img src='imdb_top__cluster_dist_20250920T051120Z.png' width='350'></div><div><h4>cluster Boxplot</h4><img src='imdb_top__cluster_box_20250920T051120Z.png' width='350'></div></div><h2>Correlation Heatmap</h2><img src='imdb_top__correlation_20250920T051120Z.png' width='700'></body></html>
